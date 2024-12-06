@@ -1,0 +1,27 @@
+#include <iostream> 
+using namespace std; 
+
+int main() { 
+  char op; 
+  float num1, num2; 
+
+  cout << "Enter a symbol: +, -, x, /: "; 
+  cin >> op; 
+
+  cout << "Enter a 2 digits: "; 
+  cin >> num1 >> num2; 
+
+  if (op == '+') { 
+    cout << num1 << " + " << num2 << " = " << num1 + num2; 
+  } else if (op == '-') { 
+    cout << num1 << " - " << num2 << " = " << num1 - num2; 
+  } else if (op == 'x') { 
+    cout << num1 << " x " << num2 << " = " << num1 * num2; 
+  } else if (op == '/') { 
+    cout << num1 << " / " << num2 << " = " << num1 / num2; 
+  } else { 
+    cout << "mali ininput mo"; 
+  }
+
+  return 0; 
+}
